@@ -1,0 +1,41 @@
+:root {
+    --background: #ededed;
+    --border: #222;
+    --grid-cell-size: 20px;
+    --size: 0;
+    --container-width: calc(var(--grid-cell-size) * var(--size)); /* 10 should be changed to the size*/
+}
+
+html {
+    background-color: rgb(222, 222, 223);
+}
+
+
+h1 {
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+.container {
+    /* width: 50%;
+    height: 50%; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.grid-element {
+    width: var(--grid-cell-size);
+    height: var(--grid-cell-size);
+    border: 1px solid var(--border);
+    background-color: var(--background);
+}
